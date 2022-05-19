@@ -16,6 +16,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_19_122631) do
     t.string "full_name"
     t.string "uid"
     t.string "avatar_url"
+    t.string "encrypted_password"
+    t.date "confirmed_at"
+    t.string "confirmation_token"
+    t.date "confirmation_sent_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
