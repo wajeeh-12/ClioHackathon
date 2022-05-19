@@ -1,5 +1,3 @@
 class ApplicationController < ActionController::Base
-  def hello
-    render html: "Welcome to teh Clio Hackathon!"
-  end
+  before_action :authenticate_user!
 end

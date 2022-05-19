@@ -7,6 +7,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
         t.string :full_name
         t.string :uid
         t.string :avatar_url
+        t.string :encrypted_password
+        t.date :confirmed_at
+        t.string :confirmation_token
+        t.date :confirmation_sent_at
 
         t.timestamps null: false
       end
