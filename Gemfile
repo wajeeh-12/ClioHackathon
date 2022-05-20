@@ -6,6 +6,7 @@ ruby "3.0.4"
 #gems for devise and omni auth
 
 gem 'devise'
+gem 'httparty'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
